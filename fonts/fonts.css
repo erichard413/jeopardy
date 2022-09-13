@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'gyparodyheavy';
-    src: url('https://erichard413.github.io/jeopardy-/fonts/gyparody_hv/gyparody_hv-webfont.woff2') format('woff2'),
-         url('https://erichard413.github.io/jeopardy-/fonts/gyparody_hv/gyparody_hv-webfont.woff') format('woff');
+    src: url('https://erichard413.github.io/jeopardy/fonts/gyparody_hv/gyparody_hv-webfont.woff2') format('woff2'),
+         url('https://erichard413.github.io/jeopardy/fonts/gyparody_hv/gyparody_hv-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'itc__korinnanormal';
-    src: url('https://erichard413.github.io/jeopardy-/fonts/itc_korinna/itc__korinna_normal-webfont.woff2') format('woff2'),
-         url('https://erichard413.github.io/jeopardy-/fonts/itc_korinna/itc__korinna_normal-webfont.woff') format('woff');
+    src: url('https://erichard413.github.io/jeopardy/fonts/itc_korinna/itc__korinna_normal-webfont.woff2') format('woff2'),
+         url('https://erichard413.github.io/jeopardy/fonts/itc_korinna/itc__korinna_normal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
