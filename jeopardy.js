@@ -23,6 +23,7 @@ let clues = [];
 const NUM_CATEGORIES = 6
 const NUM_QUESTIONS_PER_CAT = 5
 const $loadingMsg = $("#loading-msg");
+const divTable = document.querySelector("#jeopardytable");
 
 
 
@@ -138,7 +139,7 @@ async function fillTable() {
          table.append(row);
          multiplier++;
     }
-    
+    divTable.appendChild(table); 
 }
 
 function clearTable(){
@@ -158,8 +159,7 @@ function clearTable(){
  * - if currently "question", show answer & set .showing to "answer"
  * - if currently "answer", ignore click
  * */
-const page = document.body;
-page.addEventListener('click', handleClick);
+divTable.addEventListener('click', handleClick);
 
 function handleClick(evt) {
     if (evt.target.classList.value === 'td' && evt.target.classList !== "question"){
