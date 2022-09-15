@@ -22,6 +22,7 @@ let categories = [];
 let clues = [];
 const NUM_CATEGORIES = 6
 const NUM_QUESTIONS_PER_CAT = 5
+const $loadingMsg = $("#loading-msg");
 
 
 
@@ -123,6 +124,7 @@ async function fillTable() {
     for(let i = 0; i < NUM_CATEGORIES; i++){
        await getCategory(categories[0][i].id)
 }
+    $loadingMsg.hide();
     const table = document.createElement('table')
     table.append(createHdr());
     table.classList.add('jeopardyTable')
@@ -180,47 +182,16 @@ function handleClick(evt) {
 const topClick = document.querySelector('.top');
 top.addEventListener("click", (e) => {
 if (e.target.classList.value === 'button'){
+    $loadingMsg.show();
     categories = [];
     clues = [];
     multiplier = 1;
     clearTable();
     fillTable();
-    
 };
 }
 )
 
-// /** Wipe the current Jeopardy board, show the loading spinner,
-//  * and update the button used to fetch data.
-//  */
 
-// function showLoadingView() {
-
-// }
-
-// /** Remove the loading spinner and update the button used to fetch data. */
-
-// function hideLoadingView() {
-// }
-
-// /** Start game:
-//  *
-//  * - get random category Ids
-//  * - get data for each category
-//  * - create HTML table
-//  * */
 fillTable();
 createResetBtn();
-
-// async function setupAndStart() {
-// }
-
-// /** On click of start / restart button, set up game. */
-
-// // TODO
-
-
-
-// /** On page load, add event handler for clicking clues */
-
-// // TODO

@@ -63,3 +63,12 @@ padding: 10px;
   border-bottom: solid 5px black;
   box-shadow: inset 0 0 40px rgb(9, 127, 223)
 }
+#loading-msg {
+  text-align: center;
+  margin: auto;
+  }
+  #load {
+    padding-top: 200px;
+    height: 500px;
+    weight: 500px;
+  }
